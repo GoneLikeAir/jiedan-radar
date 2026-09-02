@@ -71,15 +71,20 @@ test("missing CN channels are not listed as entries", () => {
 });
 
 test("real CSS filters for 推荐 / 国内 / 海外 / 陷阱", () => {
-  assert.match(html, /<label for="f-rec">推荐<\/label>/);
-  assert.match(html, /<label for="f-cn">国内<\/label>/);
-  assert.match(html, /<label for="f-os">海外<\/label>/);
-  assert.match(html, /<label for="f-trap">陷阱<\/label>/);
+  assert.match(html, /for="f-rec"/);
+  assert.match(html, /for="f-cn"/);
+  assert.match(html, /for="f-os"/);
+  assert.match(html, /for="f-trap"/);
+  assert.match(html, /> 推荐</);
+  assert.match(html, /> 国内</);
+  assert.match(html, /> 海外</);
+  assert.match(html, /> 陷阱</);
   assert.match(html, /type="radio" name="lane" id="f-rec"/);
-  assert.match(css, /#f-rec:checked ~ \.app \[data-lanes\]:not\(\[data-lanes~="rec"\]\)/);
-  assert.match(css, /#f-cn:checked ~ \.app \[data-lanes\]:not\(\[data-lanes~="cn"\]\)/);
-  assert.match(css, /#f-os:checked ~ \.app \[data-lanes\]:not\(\[data-lanes~="os"\]\)/);
-  assert.match(css, /#f-trap:checked ~ \.app \[data-lanes\]:not\(\[data-lanes~="trap"\]\)/);
+  assert.match(css, /body:has\(#f-rec:checked\) \.app \[data-lanes\]:not\(\[data-lanes~="rec"\]\)/);
+  assert.match(css, /body:has\(#f-cn:checked\) \.app \[data-lanes\]:not\(\[data-lanes~="cn"\]\)/);
+  assert.match(css, /body:has\(#f-os:checked\) \.app \[data-lanes\]:not\(\[data-lanes~="os"\]\)/);
+  assert.match(css, /body:has\(#f-trap:checked\) \.app \[data-lanes\]:not\(\[data-lanes~="trap"\]\)/);
+  assert.match(css, /\.lane-chip:has\(:focus-visible\)/);
   assert.match(html, /data-lanes="cn rec"/);
   assert.match(html, /data-lanes="os rec"/);
   assert.match(html, /data-lanes="trap/);

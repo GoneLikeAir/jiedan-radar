@@ -27,11 +27,6 @@
 <body>
   <a class="skip" href="#board">跳到工单板</a>
 
-  <input class="sr-lane" type="radio" name="lane" id="f-rec" checked>
-  <input class="sr-lane" type="radio" name="lane" id="f-cn">
-  <input class="sr-lane" type="radio" name="lane" id="f-os">
-  <input class="sr-lane" type="radio" name="lane" id="f-trap">
-
   <div class="app">
     <header class="mast">
       <div class="mast-kicker">
@@ -48,10 +43,10 @@
     </header>
 
     <nav class="lane-nav" aria-label="工单过滤">
-      <label for="f-rec">推荐</label>
-      <label for="f-cn">国内</label>
-      <label for="f-os">海外</label>
-      <label for="f-trap">陷阱</label>
+      <label class="lane-chip" for="f-rec"><input type="radio" name="lane" id="f-rec" checked> 推荐</label>
+      <label class="lane-chip" for="f-cn"><input type="radio" name="lane" id="f-cn"> 国内</label>
+      <label class="lane-chip" for="f-os"><input type="radio" name="lane" id="f-os"> 海外</label>
+      <label class="lane-chip" for="f-trap"><input type="radio" name="lane" id="f-trap"> 陷阱</label>
     </nav>
 
     <section class="board-head" aria-label="过滤说明">
