@@ -254,11 +254,11 @@ body:has(#f-trap:checked) .app [data-lanes]:not([data-lanes~="trap"]) { display:
 
 .ticket.is-trap {
   background:
-    radial-gradient(circle at 0 12px, transparent 6px, #F6E8E2 7px) 0 0 / 16px 18px,
-    #F6E8E2;
+    radial-gradient(circle at 0 12px, transparent 6px, #E6EEF4 7px) 0 0 / 16px 18px,
+    #E6EEF4;
   box-shadow:
     3px 4px 0 rgba(18, 40, 48, 0.35),
-    inset -10px 0 0 #E7D0C6;
+    inset -10px 0 0 #C5D0DA;
 }
 
 .ticket-top {

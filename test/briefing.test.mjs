@@ -91,6 +91,19 @@ test("real CSS filters for 推荐 / 国内 / 海外 / 陷阱", () => {
   assert.doesNotMatch(html, /<script/);
 });
 
+test("every ticket has at least one clickable source link", () => {
+  const tickets = html.split(/<article class="ticket/).slice(1);
+  assert.ok(tickets.length >= 15, `expected many tickets, got ${tickets.length}`);
+  const bare = tickets
+    .map((chunk, i) => ({ i, chunk }))
+    .filter(({ chunk }) => !/href="https?:\/\//.test(chunk));
+  assert.deepEqual(
+    bare.map(({ i }) => i),
+    [],
+    `tickets without href: ${bare.map(({ i }) => i).join(", ")}`,
+  );
+});
+
 test("ticket IA fields exist", () => {
   const fieldCounts = {
     品类: (html.match(/<dt>品类<\/dt>/g) || []).length,
