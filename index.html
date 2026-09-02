@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>接单雷达 · 2026-09-02</title>
+  <meta name="description" content="2026-09-02 Asia/Shanghai 内部接单 briefing：国内与海外可接品类、价位、AI 能否独立交付、进入路径与陷阱。数字只收录能回溯 URL 的来源。">
+  <meta name="theme-color" content="#1A3A48">
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="public/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="接单雷达 · 2026-09-02">
+  <meta property="og:description" content="给 Alex 的工单雷达板：接什么、跳过什么、价位、AI 交付、进入路径。">
+  <meta property="og:url" content="https://gonelikeair.github.io/jiedan-radar/">
+  <meta property="og:image" content="https://gonelikeair.github.io/jiedan-radar/public/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="接单雷达 · 2026-09-02">
+  <meta name="twitter:description" content="给 Alex 的工单雷达板：接什么、跳过什么、价位、AI 交付、进入路径。">
+  <meta name="twitter:image" content="https://gonelikeair.github.io/jiedan-radar/public/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;600;700&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#board">跳到工单板</a>
+
+  <input class="sr-lane" type="radio" name="lane" id="f-rec" checked>
+  <input class="sr-lane" type="radio" name="lane" id="f-cn">
+  <input class="sr-lane" type="radio" name="lane" id="f-os">
+  <input class="sr-lane" type="radio" name="lane" id="f-trap">
+
+  <div class="app">
+    <header class="mast">
+      <div class="mast-kicker">
+        <span>调研日期 2026-09-02 · Asia/Shanghai</span>
+        <span>给 Alex · AI + 自动化操盘</span>
+        <span>不是实时看板</span>
+      </div>
+      <h1>接单雷达</h1>
+      <ol class="thesis">
+        <li data-n="01">国内先手：闲鱼挂 3 个标品（Excel/VBA 痛点、电商主图套餐、小工具/脚本，不要头像），再注册程序员客栈冲按月远程；不要只蹲猪八戒比稿。</li>
+        <li data-n="02">海外先手：Fiverr/Upwork 卖 n8n 包 $110–$1200 + $200/mo、Sheets/API $225+、落地页 $60–$450。定价锚 Upwork 自动化帖子 2026-08 中位 $32.50/hr，不是 BetOnAI $95–$235 发票卡（自报）。</li>
+        <li data-n="03">统一不接：保粉/全包代运营、论文与刷单、$5 ChatGPT 博客、反爬/登录抓取、整包亚马逊代运营。编辑综述与 how-to 报价已盖章，不当成交。</li>
+      </ol>
+    </header>
+
+    <nav class="lane-nav" aria-label="工单过滤">
+      <label for="f-rec">推荐</label>
+      <label for="f-cn">国内</label>
+      <label for="f-os">海外</label>
+      <label for="f-trap">陷阱</label>
+    </nav>
+
+    <section class="board-head" aria-label="过滤说明">
+      <p>过滤器是真过滤：推荐只留可执行入口；国内/海外按市场；陷阱只留应跳过的工单。无 JS 也能切。</p>
+    </section>
+
+    <main id="board" class="board">
+      <!-- 国内渠道核实 -->
+      <article class="ticket" data-lanes="cn" id="cn-channels">
+        <div class="ticket-top"><span>SLIP-CN-00</span><span class="pill">国内</span><span>渠道核实</span></div>
+        <h3>豪赞云 / 日历工厂 / 无忧客堂 · 未找到</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>渠道排查（不要当入口）</dd>
+          <dt>平台</dt><dd>检索未命中可挂单入口</dd>
+          <dt>价位</dt><dd class="price">无数字。不把未找到的站点写成渠道。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span> · 无通道可交付</dd>
+          <dt>进入</dt><dd>跳过。猪八戒仍在线需 KYC；闲鱼有官方增量。</dd>
+        </dl>
+        <p class="note">猪八戒：比稿&amp;计件技术服务费 20%；雇佣/招标 0.6%–20%（规则 ZBJ-GZ-20250102，生效 2025-01-02）。保证金 2026-05-18：芝麻信用可免；未分类保底 ¥5000。2021–22 年海报不是 2026 成交价。</p>
+        <p class="note">闲鱼 2026 H1：AI 服务 9.816 百万单（+157%）；技能类 45.1%；卖家月均 GMV ¥897。自 2026-06-01 起，年经营额超 ¥100k 等经营性卖家可能需要证照。</p>
+        <div class="links">
+          <a href="https://task.zbj.com/index/" rel="noopener">猪八戒任务大厅</a>
+          <a href="https://rule.zbj.com/ruleshow-0?categoryId=278&pid=716" rel="noopener">猪八戒规则 ZBJ-GZ-20250102</a>
+          <a href="https://www.ithome.com/0/983/021.htm" rel="noopener">IT之家 2026-07-29</a>
+          <a href="https://36kr.com/newsflashes/3916534710005126" rel="noopener">36氪 闲鱼 H1</a>
+        </div>
+        <p class="source">来源 / 日期：猪八戒规则页；IT之家 2026-07-29；36氪快讯。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn rec" id="cn-xianyu-tools">
+        <div class="ticket-top"><span>SLIP-CN-01</span><span class="pill rec">推荐</span><span class="pill">国内</span></div>
+        <h3>闲鱼 · AI 编程 / 建站 / 小工具</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>AI 编程、建站、小工具、脚本</dd>
+          <dt>平台</dt><dd>闲鱼（搜「AI编程」）</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">非成交样</span>提效录 2026-03-10 how-to：企业官网 3000–8000/项；小程序 8000–25000；爬虫 2000–8000；API 3000–15000。官方增量：AI 编程建站 +1732%，漫剧 +1425%，PPT/办公 +264%。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能出站和小工具，商务与验收仍要人</dd>
+          <dt>进入</dt><dd>低。挂标品，不要头像/壁纸。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.goofish.com/search?q=AI%E7%BC%96%E7%A8%8B" rel="noopener">闲鱼搜索 AI编程</a>
+          <a href="https://www.tixiaolu.com/posts/ai-development-business-2026/" rel="noopener">提效录 2026-03-10（非成交样）</a>
+        </div>
+        <p class="source">来源 / 日期：闲鱼搜索页；提效录 2026-03-10（how-to，不是成交样）。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn rec" id="cn-proginn">
+        <div class="ticket-top"><span>SLIP-CN-02</span><span class="pill rec">推荐</span><span class="pill">国内</span></div>
+        <h3>程序员客栈 · 按月远程</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>月结驻场/远程人力</dd>
+          <dt>平台</dt><dd>程序员客栈</dd>
+          <dt>价位</dt><dd class="price">后端 ¥14000/月 · 40h/周；前端 ¥9800/月 · 30h；产品 ¥8500/月 · 24h；UI ¥7000/月 · 24h；另一后端档 ¥6000/月 · 24h。整包需求梳理 ¥1980 / 16 小时。<span class="stamp">非正式</span>提效录称抽成 15%–20%，非正式口径。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能提速写码，不能替周会与验收</dd>
+          <dt>进入</dt><dd>中。注册后冲月结，不要只蹲猪八戒比稿。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.proginn.com/cloud" rel="noopener">客栈 Cloud 月结</a>
+          <a href="https://www.proginn.com/b/outsource" rel="noopener">客栈外包/整包</a>
+        </div>
+        <p class="source">来源 / 日期：proginn.com 挂牌页（调研时可见）。提效录抽成为非正式口径。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn rec" id="cn-ecom-visual">
+        <div class="ticket-top"><span>SLIP-CN-03</span><span class="pill rec">推荐</span><span class="pill">国内</span></div>
+        <h3>电商主图 / 详情页</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>主图、详情、套图</dd>
+          <dt>平台</dt><dd>闲鱼 + 猪八戒（主图另挂标品）</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">行业综述</span>hwds868 2026-04-11 / 2026-05-27：淘宝 200–800元/套（约 30–80/张）；天猫 1500–5000；拼多多 150–600；抖音 500–3000；兼职主图 50–150/张。扣图 3–10 是陷阱。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能出图，平台对虚假外形敏感</dd>
+          <dt>进入</dt><dd>低。按套餐卖，不接 3–10 元扣图。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.hwds868.com/article/ecommerce-detail-page-design-price-guide.html" rel="noopener">hwds868 详情页报价综述</a>
+          <a href="https://www.goofish.com/search?q=AI%E4%B8%BB%E5%9B%BE" rel="noopener">闲鱼搜索 AI主图</a>
+        </div>
+        <p class="source">来源 / 日期：hwds868 2026-04-11 / 2026-05-27（行业综述，不是平台成交库）。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn" id="cn-wechat-ops">
+        <div class="ticket-top"><span>SLIP-CN-04</span><span class="pill">国内</span></div>
+        <h3>公众号执行代运营 · 不接保粉</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>公众号执行（条数交付）</dd>
+          <dt>平台</dt><dd>政府采购公告 + 市场综述</dd>
+          <dt>价位</dt><dd class="price">北京经开区总工会 27万元/年（2026-02 至 2027-02）。中山市商务局 ≤12万/年，两年 ≤24万。福州鼓楼 12.1万（无单独回溯 URL，与同组招标事实一并收录）。市场 3000–8000/月 = 综述，不是成交库。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能写稿，不能替审核与对客</dd>
+          <dt>进入</dt><dd>高。合同写篇数和修改轮次，不写保粉。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://kfqgw.beijing.gov.cn/zwgkkfq/tzgg/202602/t20260209_4503577.html" rel="noopener">北京经开区总工会公告</a>
+          <a href="https://www.zs.gov.cn/zsswj/gkmlpt/content/2/2491/post_2491902.html" rel="noopener">中山市商务局公告</a>
+        </div>
+        <p class="source">来源 / 日期：北京经开区 2026-02 公告；中山商务局公告。市场月价为综述。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn" id="cn-xhs">
+        <div class="ticket-top"><span>SLIP-CN-05</span><span class="pill">国内</span></div>
+        <h3>小红书笔记包月</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>笔记包月 / 单篇</dd>
+          <dt>平台</dt><dd>小红书代运营市场</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">行业综述</span>hwds868 2026-03-16 / 2026-06-05：基础 3000–8000/月，约 8–12 篇；标准 1–2万；定制 2–5万。单篇 300–800。&lt;2000/月保量 = 刷量风险。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能起草，账号风险要人盯</dd>
+          <dt>进入</dt><dd>中。只卖 N 篇，合同写条数。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.hwds868.com/article/xiaohongshu-operation-service-cost-fee-complete-guide.html" rel="noopener">hwds868 小红书代运营费用</a>
+          <a href="https://www.xiaohongshu.com/search_result?keyword=%E5%B0%8F%E7%BA%A2%E4%B9%A6%E4%BB%A3%E8%BF%90%E8%90%A5" rel="noopener">小红书搜索 代运营</a>
+        </div>
+        <p class="source">来源 / 日期：hwds868 2026-03-16 / 2026-06-05（综述）。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn rec" id="cn-excel">
+        <div class="ticket-top"><span>SLIP-CN-06</span><span class="pill rec">推荐</span><span class="pill">国内</span></div>
+        <h3>Excel / VBA 痛点单</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>模板、VBA、维护</dd>
+          <dt>平台</dt><dd>闲鱼为主 · 无平台成交库</dd>
+          <dt>价位</dt><dd class="price">无平台成交库。可见口径：模板 800 + 维护 200/月；复杂 VBA 例 3000。<span class="stamp">弱来源</span>PPTwiki：猪八戒 50–300，VBA 500–2000；闲鱼 30–100。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> · 规则清楚时可独立交</dd>
+          <dt>进入</dt><dd>低。闲鱼挂痛点标品。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.goofish.com/search?q=Excel%E8%87%AA%E5%8A%A8%E5%8C%96" rel="noopener">闲鱼搜索 Excel自动化</a>
+          <a href="https://www.youres.cn/post/250.html" rel="noopener">youres 例价</a>
+          <a href="https://www.pptwiki.com/1551361.html" rel="noopener">PPTwiki（弱来源）</a>
+        </div>
+        <p class="source">来源 / 日期：无平台成交库；youres 例；PPTwiki 弱来源。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="cn rec" id="cn-scripts">
+        <div class="ticket-top"><span>SLIP-CN-07</span><span class="pill rec">推荐</span><span class="pill">国内</span></div>
+        <h3>合规数据脚本 + 月维护</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>公开数据脚本、监控、维护</dd>
+          <dt>平台</dt><dd>闲鱼 / 客栈 · 猪八戒禁区要避开</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">非成交样</span>提效录爬虫 2000–8000/次。<span class="stamp">弱来源</span>合并表 500；价格监控 1200 + 300/月。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 能写脚本，合规边界要人审</dd>
+          <dt>进入</dt><dd>中。只接公开源；猪八戒禁止隐私窃取、刷单刷粉、malware、论文代做。</dd>
+        </dl>
+        <p class="note">进入路径：闲鱼挂「公开页采集 + 月维护」，写清数据源与不碰登录态。</p>
+        <p class="source">来源 / 日期：提效录 how-to（非成交样）；弱来源例价。猪八戒禁区见规则页。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="cn trap" id="cn-smzdm">
+        <div class="ticket-top"><span>SLIP-CN-HANG</span><span class="pill warn">不是挂牌成交</span><span class="pill">国内</span></div>
+        <h3>什么值得买 2026-08-31 挂牌价</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>头像 / 壁纸 / 配图包月（观察，不作为成交）</dd>
+          <dt>平台</dt><dd>什么值得买晒单</dd>
+          <dt>价位</dt><dd class="price">头像 19–39/张，定制 59–199，壁纸 15–50，配图包月 1000–3000。新手一周：12 次咨询、3 单成交、¥204。以上是挂牌观察，不是挂牌成交库。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> · 但官方卖家月均 GMV 只有 ¥897，不值得占坑</dd>
+          <dt>进入</dt><dd>跳过（见陷阱 T1）。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://post.smzdm.com/p/aomx22er/" rel="noopener">什么值得买 2026-08-31</a>
+        </div>
+        <p class="source">来源 / 日期：smzdm 2026-08-31（挂牌观察，不是成交）。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="cn trap" id="cn-zhihu-cursor">
+        <div class="ticket-top"><span>SLIP-CN-ZHIHU</span><span class="pill warn">不是知乎成交</span></div>
+        <h3>Cursor 教程价 · 不当成交</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>教程口播价</dd>
+          <dt>平台</dt><dd>知乎搜索「Cursor 接单」</dd>
+          <dt>价位</dt><dd class="price">爬虫 300–800 / 小程序 1000–3000 / 脚本 200–800。以上不是知乎成交。「小红书自动发笔记 3500」不推荐。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span> · 自动发笔记有平台与账号风险</dd>
+          <dt>进入</dt><dd>跳过自动发笔记产品。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.zhihu.com/search?type=content&q=Cursor%20%E6%8E%A5%E5%8D%95" rel="noopener">知乎搜索 Cursor 接单</a>
+        </div>
+        <p class="source">来源 / 日期：知乎搜索页教程价（不是知乎成交）。调研 2026-09-02。</p>
+      </article>
+
+      <!-- 海外 -->
+      <article class="ticket" data-lanes="os rec" id="os-n8n">
+        <div class="ticket-top"><span>SLIP-OS-01</span><span class="pill rec">推荐</span><span class="pill">海外</span></div>
+        <h3>n8n / Make / Zapier 自动化</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>工作流搭建、连接器、维护</dd>
+          <dt>平台</dt><dd>Upwork · Fiverr · PeoplePerHour</dd>
+          <dt>价位</dt><dd class="price">Upwork hire n8n 2026-03：$20–$60/hr，中位约 $35/hr。Redwater 2026-08 自动化：中位 $32.50/hr，均值 $36.91，p25 $18.25，p75 $50，最高 $250；当月职位 Zapier 1070 / n8n 960 / Make 421。<span class="stamp">编辑综述</span>Axis-AI 2026：Upwork 单工作流一次性 $500–$2500；Fiverr 整包 $45–$520，多数 Make/n8n $100–$300。索引到的 Fiverr Crissenpai：$110 / $500 / $1200 + $200/月。PeoplePerHour Shopify→Sheets Make.com $240 一次性 · 3 天。Fiverr HTML 被机器人墙拦截；上列 Fiverr 价来自 Google 索引 gig + Fiverr 2026 成本指南摘录。BetOnAI / Axis / AFFStudio 不当作发票，除非已标编辑综述。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span></dd>
+          <dt>进入</dt><dd>中。按包价卖，时薪锚 $32.50 中位。</dd>
+        </dl>
+        <p class="note">Freelancer.com：没有已核实的 2026 中位数。Upwork 抓取类职位声称 2903（无标价）。在招（无标价）：n8n / OpenClaw Agents 社媒自动化。</p>
+        <div class="links">
+          <a href="https://www.upwork.com/hire/n8n-experts/" rel="noopener">Upwork hire n8n</a>
+          <a href="https://www.fiverr.com/crissenpai/create-advanced-ai-automation-agents-and-workflows-using-n8n" rel="noopener">Fiverr Crissenpai</a>
+          <a href="https://www.peopleperhour.com/hourlie/set-up-order-export-from-one-shopify-store-to-google-sheets/1095932" rel="noopener">PPH Shopify→Sheets $240</a>
+          <a href="https://upwork.redwaterrev.com/" rel="noopener">Redwater Upwork 2026-08</a>
+          <a href="https://axis-ai.agency/blog/ai-automation-cost-2026" rel="noopener">Axis-AI 2026（编辑综述）</a>
+          <a href="https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-n8n-OpenClaw-Agents-Social-Media-Automation_~022036758903426954516/" rel="noopener">Upwork 在招（无标价）</a>
+          <a href="https://www.upwork.com/freelance-jobs/data-scraping/" rel="noopener">Upwork scraping 2903</a>
+        </div>
+        <p class="source">来源 / 日期：Upwork hire 2026-03；Redwater 2026-08；Axis-AI 编辑综述 2026；索引 gig；PPH 挂牌。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os" id="os-agent">
+        <div class="ticket-top"><span>SLIP-OS-02</span><span class="pill">海外</span></div>
+        <h3>SMB AI agent / 客服 chatbot</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>客服机器人、AI agent、Custom GPT 应用</dd>
+          <dt>平台</dt><dd>Fiverr</dd>
+          <dt>价位</dt><dd class="price">Fiverr 官方 2026：AI chatbot 均约 $216；AI agents 约 $295；Custom GPT apps 约 $341；基础规则机器人 $30–$125，中档 $200–$400，高阶 $500–$1500。索引 Sameerahmad943：€135.98 / €453.27 / €906.55。<span class="stamp">非正式</span>BetOnAI 2026-06-11（不是市场官方）：agent 搭建 $1200–$6000，常见 $1500–$2500 + $400–$800/月。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span></dd>
+          <dt>进入</dt><dd>中。用官方均价，不用 BetOnAI 当发票。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.fiverr.com/resources/guides/costs/chatbot-developer" rel="noopener">Fiverr chatbot 成本指南</a>
+          <a href="https://www.fiverr.com/sameerahmad943/build-rag-llms-advanced-ai-agents-ai-chatbots-with-n8n-lang-graph-langchain" rel="noopener">Sameerahmad943 索引价</a>
+          <a href="https://www.fiverr.com/search/gigs?query=n8n%20ai%20agent" rel="noopener">Fiverr 搜 n8n ai agent</a>
+        </div>
+        <p class="source">来源 / 日期：Fiverr 官方指南 2026；索引 gig；BetOnAI 2026-06-11 非正式。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os" id="os-gpt">
+        <div class="ticket-top"><span>SLIP-OS-03</span><span class="pill">海外</span></div>
+        <h3>Custom GPT / Claude Project</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>提示词 + 文件 + SOP / 私有 RAG</dd>
+          <dt>平台</dt><dd>Fiverr</dd>
+          <dt>价位</dt><dd class="price">Fiverr 均约 $341。<span class="stamp">非正式</span>BetOnAI 2026-06 非正式：$300–$1200 常见。kinzaarooj24 €13.56 / €45.20 / €90.40 是竞次底价。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> 提示词+文件+SOP；<span class="ai-half">半</span> SSO / 私有 RAG</dd>
+          <dt>进入</dt><dd>低（标品 GPT）；私有 RAG 中高。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.fiverr.com/resources/guides/costs/ai-automation-experts" rel="noopener">Fiverr AI automation 指南</a>
+          <a href="https://www.fiverr.com/kinzaarooj24/create-a-custom-gpt-chatbot-for-your-website-or-business-automation" rel="noopener">kinzaarooj24 竞次价</a>
+        </div>
+        <p class="source">来源 / 日期：Fiverr 指南均价；BetOnAI 2026-06 非正式；索引 gig。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os rec" id="os-sheets">
+        <div class="ticket-top"><span>SLIP-OS-04</span><span class="pill rec">推荐</span><span class="pill">海外</span></div>
+        <h3>Excel / Sheets / API</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>表格自动化、宏、Apps Script、店铺 API</dd>
+          <dt>平台</dt><dd>Fiverr · Upwork</dd>
+          <dt>价位</dt><dd class="price">Fiverr Excel 2026：automation 均约 $123.46；formulas/macros 约 $93.94；data processing 约 $157.15；定制 $75–$130；全自动常见 $130–$200+。Guruji：Amazon/Shopify API 进 Sheet 起 $225；macros/Apps Script/API 起 $375；$125/hr；评价区间 $400–$1500。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> / <span class="ai-yes">能</span> · 规则清楚时能独立交</dd>
+          <dt>进入</dt><dd>低。落地顺序写 Sheets/API $225+。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.fiverr.com/resources/guides/costs/excel-expert" rel="noopener">Fiverr Excel 指南</a>
+          <a href="https://www.fiverr.com/msacces_guruji" rel="noopener">Guruji</a>
+          <a href="https://www.upwork.com/freelance-jobs/google-sheets/" rel="noopener">Upwork Google Sheets 职位</a>
+        </div>
+        <p class="source">来源 / 日期：Fiverr Excel 2026 指南；Guruji 挂牌。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os cn" id="os-amazon">
+        <div class="ticket-top"><span>SLIP-OS-05</span><span class="pill">海外</span><span class="pill">国内也可看</span></div>
+        <h3>跨境 Amazon listing</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>多语 listing、A+、主图详情</dd>
+          <dt>平台</dt><dd>how-to 文 + 猪八戒在线服务</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">how-to</span>fu-ye.com 2026-08-21（how-to，不是在线购物车）：5 件套 ¥50–120；含 A+ ¥150–300；文案+AI 场景 ¥500–800/套；月度新 SKU ¥1500–¥3000/月。猪八戒在线：详情页策划 ¥1998 / ¥2888 / ¥3688；主图/详情 起 ¥66。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · Amazon 把伪造 AI 产品外形视为误导</dd>
+          <dt>进入</dt><dd>中。可接文案/A+，不接假外形。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://fu-ye.com/bang-zhong-xiao-kua-jing-mai-jia-pi-liang-zhi-zuo-duo-yu-chong-listingyu-axiang-qing-ye-yi-ge-an-jian-ji-fei-de-gao-pin-qing-dai-gong-sheng-yi/" rel="noopener">fu-ye 2026-08-21 how-to</a>
+          <a href="https://www.zbj.com/fw/818678.html" rel="noopener">猪八戒 详情策划</a>
+          <a href="https://www.zbj.com/fw/2114606.html" rel="noopener">猪八戒 主图/详情</a>
+        </div>
+        <p class="source">来源 / 日期：fu-ye 2026-08-21 how-to（不是在线购物车）；猪八戒在线服务页。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os" id="os-photos">
+        <div class="ticket-top"><span>SLIP-OS-06</span><span class="pill">海外</span></div>
+        <h3>AI 产品图</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>产品图 / 场景图</dd>
+          <dt>平台</dt><dd>Fiverr</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">编辑综述</span>BetOnAI 2026-06 $60–$400/gig 编辑综述。Ramzika 起 £15.61 / £46.83。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span> · 需要真实包装实拍</dd>
+          <dt>进入</dt><dd>中。必须有 packshot，不单靠生成。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.fiverr.com/ramzika/create-amazing-product-images-using-the-creative-of-ai" rel="noopener">Ramzika</a>
+          <a href="https://www.fiverr.com/search/gigs?query=ai%20product%20photography" rel="noopener">Fiverr 搜 AI product photography</a>
+          <a href="https://chenfeiblog.com/ai-workflow-for-cross-border-sellers/" rel="noopener">跨境卖家 AI 工作流笔记</a>
+        </div>
+        <p class="source">来源 / 日期：BetOnAI 2026-06 编辑综述；Ramzika 索引挂牌。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os rec" id="os-lp">
+        <div class="ticket-top"><span>SLIP-OS-07</span><span class="pill rec">推荐</span><span class="pill">海外</span></div>
+        <h3>Shopify 主题 / 落地页</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>主题改装、静态落地页、整店</dd>
+          <dt>平台</dt><dd>Fiverr</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">编辑综述</span>Fixerlinks 2026-03-21：主题 $30/$45/$75 与 $30/$50/$95；整店 $80–$495。Fiverr 前端指南落地页均约 $103.93，$80–$250。Hemaa $85/$90/$100；Expert_html $60/$250/$450；Massivework SaaS €409.53 / €841.56 / €1004。</dd>
+          <dt>AI交付</dt><dd><span class="ai-half">半</span></dd>
+          <dt>进入</dt><dd>中。落地顺序写 LP $60–$450。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://fixerlinks.com/how-much-does-a-shopify-store-cost-on-fiverr/" rel="noopener">Fixerlinks 2026-03-21</a>
+          <a href="https://www.fiverr.com/expert_html/create-responsive-landing-page-design" rel="noopener">Expert_html</a>
+          <a href="https://www.fiverr.com/hemaa_developer/build-responsive-static-landing-pages-with-github-hosting" rel="noopener">Hemaa</a>
+          <a href="https://www.fiverr.com/resources/guides/costs/front-end-web-developer" rel="noopener">Fiverr 前端成本指南</a>
+        </div>
+        <p class="source">来源 / 日期：Fixerlinks 2026-03-21（编辑综述）；Fiverr 指南与索引 gig。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket" data-lanes="os" id="os-gumroad">
+        <div class="ticket-top"><span>SLIP-OS-08</span><span class="pill">海外</span></div>
+        <h3>垂直 n8n 模板 · Gumroad</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>JSON 工作流 + 文档</dd>
+          <dt>平台</dt><dd>Gumroad</dd>
+          <dt>价位</dt><dd class="price">在售 n8n Workflow Starter Pack $29。<span class="stamp">编辑综述</span>AFFStudio 2026-06-17 编辑综述：$19–$49 / $50–$149 / $150–$500。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> JSON+文档；生意难</dd>
+          <dt>进入</dt><dd>低进、高卖。同质 $29 包见陷阱 T2。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://opsplaybookshq.gumroad.com/l/n8n-workflow-starter-pack" rel="noopener">Starter Pack $29 在售</a>
+          <a href="https://theworkflowmuse.gumroad.com/l/njxbqd" rel="noopener">Workflow Muse</a>
+          <a href="https://affstudio.org/2026/06/17/best-n8n-templates-to-sell-in-2026-15-automation-ideas-that-businesses-actually-pay-for/" rel="noopener">AFFStudio 2026-06-17 编辑综述</a>
+        </div>
+        <p class="source">来源 / 日期：Gumroad 在售页；$29 为页面标价。AFFStudio 2026-06-17 为编辑综述不是发票。调研 2026-09-02。</p>
+      </article>
+
+      <!-- 陷阱 -->
+      <article class="ticket is-trap" data-lanes="trap os" id="trap-os-1">
+        <div class="ticket-top"><span>TRAP-OS-1</span><span class="pill warn">陷阱</span><span class="pill">海外</span></div>
+        <h3>$5 ChatGPT 博客已塌</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>批量 AI 博客</dd>
+          <dt>平台</dt><dd>Fiverr / Upwork 观察</dd>
+          <dt>价位</dt><dd class="price"><span class="stamp">非正式</span>BetOnAI 2026-06： $5 ChatGPT 博客已塌；还活着的 SEO brief $80–$300。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span> · 交付不值钱</dd>
+          <dt>进入</dt><dd>跳过。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://betonai.net/the-10-highest-earning-ai-automation-gigs-on-fiverr-upwork-in-june-2026-what-is-actually-selling-real-earnings-data-and-the-gig-templates-that-convert/" rel="noopener">BetOnAI 2026-06（非正式）</a>
+        </div>
+        <p class="source">来源 / 日期：BetOnAI 2026-06 非正式，不是发票。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="trap os" id="trap-os-2">
+        <div class="ticket-top"><span>TRAP-OS-2</span><span class="pill warn">陷阱</span></div>
+        <h3>Gumroad 2000+ 条 n8n · $29 同质包</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>大礼包模板</dd>
+          <dt>平台</dt><dd>Gumroad</dd>
+          <dt>价位</dt><dd class="price">示例包 $29（如 2000+ workflows）。和垂直包抢同一价格带。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> · 生意难</dd>
+          <dt>进入</dt><dd>跳过同质大礼包；垂直场景另说。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://aithorityproximaai.gumroad.com/l/n8nworkflows" rel="noopener">2000+ n8n $29 例</a>
+        </div>
+        <p class="source">来源 / 日期：Gumroad 在售例。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="trap os cn" id="trap-os-3">
+        <div class="ticket-top"><span>TRAP-OS-3</span><span class="pill warn">陷阱</span></div>
+        <h3>反爬/登录抓取 + 整包 Amazon 代运营</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>登录态抓取、全托管运营</dd>
+          <dt>平台</dt><dd>Upwork scraping · 猪八戒百科</dd>
+          <dt>价位</dt><dd class="price">猪八戒百科电商代运营 ¥15,000–¥24,000 是运营团队+广告，不是个人可独立交付的脚本单。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span></dd>
+          <dt>进入</dt><dd>跳过。反爬/登录与全包运营都不是 AI 单兵活。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.upwork.com/freelance-jobs/web-scraping/" rel="noopener">Upwork web scraping</a>
+          <a href="https://baike.zbj.com/index/1289" rel="noopener">猪八戒百科 代运营</a>
+          <a href="https://www.upkuajing.com/knowledge/zixun/27063" rel="noopener">跨境代运营说明</a>
+        </div>
+        <p class="source">来源 / 日期：Upwork 职位列表；猪八戒百科；upkuajing。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="trap cn" id="trap-cn-1">
+        <div class="ticket-top"><span>TRAP-CN-1</span><span class="pill warn">陷阱</span><span class="pill">国内</span></div>
+        <h3>闲鱼 AI 头像 / 壁纸 / 9.9 装 Agent</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>低客单图包、套装 Agent</dd>
+          <dt>平台</dt><dd>闲鱼</dd>
+          <dt>价位</dt><dd class="price">官方卖家月均 GMV ¥897。9.9 装 Agent 与头像壁纸把坑占满、客单极低。</dd>
+          <dt>AI交付</dt><dd><span class="ai-yes">能</span> · 不值得做</dd>
+          <dt>进入</dt><dd>跳过。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://www.goofish.com/search?q=AI%E5%A4%B4%E5%83%8F" rel="noopener">闲鱼搜索 AI头像</a>
+        </div>
+        <p class="source">来源 / 日期：闲鱼搜索；官方月均 GMV ¥897（IT之家/36氪口径）。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="trap cn" id="trap-cn-2">
+        <div class="ticket-top"><span>TRAP-CN-2</span><span class="pill warn">陷阱</span></div>
+        <h3>猪八戒比稿 + 20% 抽成</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>比稿/计件</dd>
+          <dt>平台</dt><dd>猪八戒</dd>
+          <dt>价位</dt><dd class="price">比稿&amp;计件技术服务费 20%。<span class="stamp">非正式</span>ukezhitan 非正式口径：约 85% 订单落在 500–3000。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span> · 比稿耗时且抽成高</dd>
+          <dt>进入</dt><dd>不要只蹲比稿；雇佣/招标档另看 0.6%–20%。</dd>
+        </dl>
+        <div class="links">
+          <a href="https://rule.zbj.com/ruleshow-0?categoryId=278&pid=716" rel="noopener">猪八戒规则（20% / 0.6%）</a>
+          <a href="https://task.zbj.com/index/" rel="noopener">任务大厅</a>
+        </div>
+        <p class="source">来源 / 日期：ZBJ-GZ-20250102。ukezhitan 非正式口径，不是官方。调研 2026-09-02。</p>
+      </article>
+
+      <article class="ticket is-trap" data-lanes="trap cn" id="trap-cn-3">
+        <div class="ticket-top"><span>TRAP-CN-3</span><span class="pill warn">陷阱</span></div>
+        <h3>&lt;2000/月全包代运营保粉 · 论文 / 刷单</h3>
+        <dl class="meta">
+          <dt>品类</dt><dd>保粉代运营、论文、刷单刷粉</dd>
+          <dt>平台</dt><dd>各国内平台</dd>
+          <dt>价位</dt><dd class="price">&lt;2000/月全包+保粉 = 刷量风险。论文代做、刷单刷粉为猪八戒明确禁止项。</dd>
+          <dt>AI交付</dt><dd><span class="ai-hard">难</span> · 且不该接</dd>
+          <dt>进入</dt><dd>拒绝。合同不写保粉。</dd>
+        </dl>
+        <p class="source">来源 / 日期：hwds868 小红书费用文（&lt;2000/月保量）；猪八戒禁区。调研 2026-09-02。</p>
+      </article>
+    </main>
+
+    <section class="playbook" id="playbook">
+      <h2>落地顺序</h2>
+      <ol>
+        <li>闲鱼挂 3 个标品：Excel/VBA 痛点单、电商主图套餐、小工具/脚本（不要头像）。</li>
+        <li>注册程序员客栈冲按月远程，不要只蹲猪八戒比稿。</li>
+        <li>小红书/公众号只卖 N 篇交付，合同写条数和修改轮次，不写保粉。</li>
+        <li>规模过闲鱼经营性阈值再办个体户（年经营额超 ¥100k 等，自 2026-06-01）。</li>
+        <li>海外：Fiverr/Upwork n8n 包 $110–$1200 + $200/mo；Sheets/API $225+；LP $60–$450。</li>
+      </ol>
+    </section>
+
+    <footer class="site-foot">
+      <p>调研日期 2026-09-02（Asia/Shanghai）。受众：Alex。本页是内部 briefing，不是营销站，也不是伪实时仪表盘。</p>
+      <p>数字只收录能回溯 URL 的来源。how-to、编辑综述、非正式口径、挂牌观察均已在工单上盖章。福州鼓楼 12.1万 无单独 URL，未单列来源链。未找到：豪赞云、日历工厂、无忧客堂。</p>
+    </footer>
+  </div>
+</body>
+</html>
